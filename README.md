@@ -1,54 +1,66 @@
-# React + TypeScript + Vite
+# Emelie Boss - Web Developer Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive portfolio website built with React and TypeScript, showcasing my journey as a web developer and my latest projects.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## Expanding the ESLint configuration
+- **Responsive Hero Section** - Dynamic introduction with background image
+- **Technical Skills Showcase** - Organized display of frontend, backend, and additional competencies
+- **Project Portfolio** - Filterable gallery of my latest work
+- **Design Projects** - Showcase of UX/UI design work with Figma prototypes
+- **Interactive Contact Form** - Integrated with EmailJS for direct communication
+- **Modern UI/UX** - Clean design with smooth animations and transitions
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Tech Stack
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+### Frontend
+- React.js with TypeScript
+- CSS Modules for styling
+- Vite for build tooling
+- EmailJS for contact form functionality
+
+### Design & Styling
+- Custom CSS animations
+- Responsive design
+- Google Fonts (Poppins & Stalemate)
+- SVG icons for visual elements
+
+
+## Project Structure
+
+```
+src/
+├── components/        # Reusable UI components
+├── sections/         # Main page sections
+│   ├── HeroSection
+│   ├── AboutMe
+│   ├── TechStack
+│   ├── Projects
+│   ├── DesignShowcase
+│   └── Footer
+├── styles/          # Global styles and variables
+├── data/           # Static data and content
+└── config/         # Configuration files
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Design Decisions
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- **Color Palette**: Warm, professional tones with mauve accents
+- **Typography**: Clean, modern fonts with decorative elements
+- **Layout**: Modular sections with consistent spacing
+- **Animations**: Subtle transitions for enhanced user experience
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+## Responsive Design
+
+- Desktop-first approach
+- Breakpoints for various device sizes
+- Optimized images and assets
+- Flexible grid layouts
+
+
+## Contact
+
+- Email: emelie.boss@outlook.com
+- LinkedIn: [Emelie Boss](https://www.linkedin.com/in/emelie-boss-31b36930b/)
+- GitHub: [EmelieSonjaBoss](https://github.com/EmelieSonjaBoss)
