@@ -1,5 +1,6 @@
+/* Ensure variables are available globally */
 :root {
-  /* Colors */
+  /* Colors - with fallback values */
   --color-primary: rgba(46, 38, 33, 0.966);
   --color-primary-hover: rgba(46, 38, 33, 0.966);
   --color-text-primary: rgba(46, 38, 33, 0.966);
@@ -49,4 +50,28 @@
   --z-index-base: 1;
   --z-index-overlay: 2;
   --z-index-modal: 3;
+}
+
+/* Ensure variables are also available in dark mode if needed */
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* Keep the same values or adjust for dark mode */
+    --color-primary: rgba(46, 38, 33, 0.966);
+    --color-primary-hover: rgba(46, 38, 33, 0.966);
+    --color-text-primary: rgba(46, 38, 33, 0.966);
+    --color-text-secondary: #666;
+    --color-background: #ffffff;
+    --color-background-alt: #f5f5f5;
+    --color-accent: rgb(221, 169, 145);
+    --color-hero-text: #fffdf3;
+    --color-peach: rgb(247, 196, 161);
+    --color-cream: #fffdf3;
+    --color-mauve: #bd8969;
+  }
+}
+
+/* Ensure variables are available in the html and body elements */
+html, body {
+  color: var(--color-text-primary, rgba(46, 38, 33, 0.966));
+  background-color: var(--color-background, #ffffff);
 } 

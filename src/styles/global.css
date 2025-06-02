@@ -5,29 +5,45 @@
   box-sizing: border-box;
 }
 
-:root {
+/* Ensure the root element takes up full height */
+html, body, #root {
+  height: 100%;
+  width: 100%;
+}
+
+/* Apply base styles using CSS variables */
+body {
   font-family: 'Poppins', sans-serif;
+  color: var(--color-text-primary, rgba(46, 38, 33, 0.966));
+  background-color: var(--color-background, #ffffff);
   line-height: 1.5;
-  font-weight: 400;
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-body {
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden;
-  min-width: 320px;
-  min-height: 100vh;
+/* Ensure proper inheritance of colors and fonts */
+button, input, textarea {
+  font-family: inherit;
+  color: inherit;
 }
 
-#root {
-  margin: 0;
-  padding: 0;
-  text-align: center;
+/* Ensure proper color inheritance for links */
+a {
+  color: inherit;
+  text-decoration: none;
 }
+
+/* Utility classes for colors */
+.color-primary { color: var(--color-primary, rgba(46, 38, 33, 0.966)) !important; }
+.color-accent { color: var(--color-accent, rgb(221, 169, 145)) !important; }
+.color-peach { color: var(--color-peach, rgb(247, 196, 161)) !important; }
+.color-mauve { color: var(--color-mauve, #bd8969) !important; }
+
+/* Background utility classes */
+.bg-primary { background-color: var(--color-primary, rgba(46, 38, 33, 0.966)) !important; }
+.bg-accent { background-color: var(--color-accent, rgb(221, 169, 145)) !important; }
+.bg-peach { background-color: var(--color-peach, rgb(247, 196, 161)) !important; }
+.bg-mauve { background-color: var(--color-mauve, #bd8969) !important; }
 
 /* Global link styles */
 a {

@@ -1,5 +1,6 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
+// Import variables first to ensure they're available
 import './styles/variables.css'
 import './styles/global.css'
 import App from './App.tsx'
