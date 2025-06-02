@@ -21,6 +21,11 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* Base heading styles - keeping them light by default */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: inherit;
+}
+
 /* Ensure proper inheritance of colors and fonts */
 button, input, textarea {
   font-family: inherit;
