@@ -5,10 +5,17 @@
   box-sizing: border-box;
 }
 
-/* Ensure the root element takes up full height */
-html, body, #root {
+/* Ensure the root element takes up full height and prevent horizontal scroll */
+html, body {
   height: 100%;
   width: 100%;
+  overflow-x: hidden;
+}
+
+#root {
+  height: 100%;
+  width: 100%;
+  position: relative;
 }
 
 /* Apply base styles using CSS variables */
@@ -21,8 +28,13 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Base heading styles - keeping them light by default */
-h1, h2, h3, h4, h5, h6 {
+/* Base heading styles - keeping them light by default, but not affecting sections with their own styles */
+body > *:not(.projects) h1, 
+body > *:not(.projects) h2, 
+body > *:not(.projects) h3, 
+body > *:not(.projects) h4, 
+body > *:not(.projects) h5, 
+body > *:not(.projects) h6 {
   font-weight: inherit;
 }
 
