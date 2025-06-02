@@ -70,6 +70,7 @@
 @media screen and (max-width: 768px) {
   .heroTextContainer {
     right: 35%;
+    top: 71vh;
   }
 
   .heroSection::after {
