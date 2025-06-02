@@ -35,7 +35,7 @@ export const techStackData = {
   tools: [
     'Git & GitHub',
     'VS Code',
-    'Cursor IDE (AI-assisted development)',
+    'Cursor IDE',
     'Postman & Insomnia',
     'npm',
     'Docker',

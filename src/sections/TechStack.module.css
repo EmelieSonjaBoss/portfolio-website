@@ -75,12 +75,15 @@
 }
 
 .skillGroups {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
   gap: 2rem;
+  justify-content: center;
 }
 
 .skillGroup {
+  flex: 0 0 calc(33.333% - 1.334rem); /* subtracting the gap to maintain 3 items per row */
+  min-width: 300px;
   padding: 1.5rem;
   background-color: rgba(247, 205, 178, 0.1);
   border-radius: 12px;
@@ -139,9 +142,10 @@
   transform: translateY(-1px);
 }
 
-@media (max-width: 768px) {
-  .skillGroups {
-    grid-template-columns: 1fr;
+@media (max-width: 1024px) {
+  .skillGroup {
+    flex: 0 0 100%;
+    max-width: 500px; /* limit the width when in single column */
   }
   
   .additionalSkills {
