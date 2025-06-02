@@ -1,0 +1,66 @@
+export const techStackData = {
+  frontend: [
+    'React.js',
+    'Vue.js',
+    'TypeScript',
+    'JavaScript',
+    'HTML/CSS', 
+    'SASS/SCSS',
+    'Vite',
+    'Axios',
+    'Consuming REST APIs',
+    'Pinia (State Management)'
+  ],
+  backend: [
+    'Node.js',
+    'Express',
+    'MongoDB',
+    'Mongoose',
+    'MySQL',
+    'JWT Authentication',
+    'Bcrypt',
+    'RESTful APIs Development',
+    'CORS',
+    'Middleware Development',
+    'Database Modeling',
+    'API Security',
+    'dotenv'
+  ],
+  design: [
+    'UX Design',
+    'Figma',
+    'Responsive Design',
+    'UI/UX Best Practices',
+    'Wireframing',
+    'Prototyping',
+    'Color Theory',
+    'Typography',
+    'User Flow Design',
+    'Accessibility (a11y)'
+  ],
+  tools: [
+    'Git',
+    'GitHub',
+    'Insomnia',
+    'Cursor IDE',
+    'VS Code',
+    'API Development',
+    'Postman',
+    'Chrome DevTools',
+    'npm/yarn',
+    'ESLint',
+    'Prettier',
+    'Docker',
+  ],
+  methodologies: [
+    'Agile Development',
+    'Scrum',
+    'Database Design',
+    'RESTful Architecture',
+    'Version Control',
+    'Code Review',
+    'Clean Code Principles',
+    'Component-Based Architecture',
+    'Responsive Design Patterns'
+  ]
+}; 

@@ -1,0 +1,121 @@
+.projectCard {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+  min-height: 550px; /* Changed from fixed height to minimum height */
+  display: flex;
+  flex-direction: column;
+}
+
+.projectCard:hover {
+  transform: translateY(-5px);
+}
+
+.projectImage {
+  position: relative;
+  padding-top: 60%;
+  overflow: hidden;
+  flex-shrink: 0; /* Prevent image from shrinking */
+}
+
+.projectImage img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.projectCard:hover .projectImage img {
+  transform: scale(1.05);
+}
+
+.projectOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.projectCard:hover .projectOverlay {
+  opacity: 1;
+}
+
+.projectLinks {
+  display: flex;
+  gap: 1rem;
+}
+
+.projectLinks a {
+  padding: 0.8rem 1.5rem;
+  background: white;
+  color: #333;
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.projectLinks a:hover {
+  background: #333;
+  color: white;
+}
+
+.projectInfo {
+  padding: 1.5rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding-bottom: 3rem; /* Added extra padding at bottom for date */
+}
+
+.projectInfo h3 {
+  font-size: 1.4rem;
+  color: #333;
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
+.projectInfo p {
+  color: #666;
+  line-height: 1.6;
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
+.projectTech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.techTag {
+  padding: 0.4rem 0.8rem;
+  background: #f0f0f0;
+  border-radius: 15px;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.date {
+  font-size: 0.8rem;
+  color: #999;
+  font-style: italic;
+  position: absolute;
+  bottom: 1rem;
+  right: 1.5rem;
+  background: white; /* Added to ensure date is always visible */
+  padding: 0.2rem 0.5rem; /* Added some padding around the date */
+} 

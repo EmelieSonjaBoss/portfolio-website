@@ -1,0 +1,80 @@
+.aboutMe {
+  padding: 4rem 2rem;
+  background-color: rgb(247, 205, 178);
+  margin: 0;
+}
+
+.content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  gap: 4rem;
+  align-items: flex-start;
+}
+
+.textSection {
+  flex: 1;
+  padding-right: 2rem;
+}
+
+.mainText {
+  font-size: 1.8rem;
+  line-height: 1.5;
+  color: #333;
+  text-align: left;
+  max-width: 600px;
+  font-weight: 300;
+}
+
+.highlights {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding-top: 0.5rem;
+}
+
+.highlight {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+  flex-shrink: 0;
+  color: var(--color-mauve);
+  margin-top: 0.2rem;
+}
+
+.icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.highlight p {
+  margin: 0;
+  font-size: 1.2rem;
+  line-height: 1.4;
+  color: #333;
+  text-align: left;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .textSection {
+    padding-right: 0;
+  }
+
+  .mainText {
+    text-align: center;
+    margin: 0 auto;
+    font-size: 1.5rem;
+  }
+} 

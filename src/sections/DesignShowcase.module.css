@@ -1,0 +1,117 @@
+.designShowcase {
+  padding: 4rem 2rem;
+  background-color: rgb(247, 205, 178);
+  text-align: center;
+}
+
+.designShowcase h2 {
+  font-size: 2rem;
+  color: rgba(46, 38, 33, 0.966);
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  color: var(--color-text-secondary);
+  margin-bottom: 3rem;
+  font-size: 1.1rem;
+}
+
+.projectsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.designProject {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 2rem;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.projectInfo {
+  text-align: left;
+}
+
+.projectInfo h3 {
+  font-size: 1.5rem;
+  color: var(--color-text-primary);
+  margin-bottom: 0.5rem;
+}
+
+.projectInfo p {
+  color: var(--color-text-secondary);
+  margin-bottom: 1rem;
+}
+
+.figmaLink {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: var(--color-peach);
+  color: black;
+  text-decoration: none;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+
+.figmaLink:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.imageScroll {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  padding: 1rem;
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-peach) transparent;
+}
+
+.imageScroll::-webkit-scrollbar {
+  height: 6px;
+}
+
+.imageScroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.imageScroll::-webkit-scrollbar-thumb {
+  background-color: var(--color-peach);
+  border-radius: 20px;
+}
+
+.designImage {
+  height: 200px;
+  border-radius: 8px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.designImage:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .designProject {
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+  }
+
+  .projectInfo {
+    flex: 1;
+    padding-right: 2rem;
+  }
+
+  .imageScroll {
+    flex: 2;
+  }
+} 

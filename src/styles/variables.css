@@ -1,0 +1,52 @@
+:root {
+  /* Colors */
+  --color-primary: rgba(46, 38, 33, 0.966);
+  --color-primary-hover: rgba(46, 38, 33, 0.966);
+  --color-text-primary: rgba(46, 38, 33, 0.966);
+  --color-text-secondary: #666;
+  --color-background: #ffffff;
+  --color-background-alt: #f5f5f5;
+  --color-accent: rgb(221, 169, 145);
+  --color-hero-text: #fffdf3;
+  --color-peach: rgb(247, 196, 161);
+  --color-cream: #fffdf3;
+  --color-mauve: #bd8969;
+  
+  /* Shadows */
+  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 4px 8px rgba(0, 0, 0, 0.15);
+  
+  /* Spacing */
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 1.5rem;
+  --spacing-lg: 2rem;
+  --spacing-xl: 4rem;
+  
+  /* Border Radius */
+  --border-radius-sm: 8px;
+  --border-radius-md: 12px;
+  --border-radius-lg: 25px;
+  
+  /* Transitions */
+  --transition-default: all 0.3s ease;
+  
+  /* Font Sizes */
+  --font-size-sm: 0.9rem;
+  --font-size-base: 1rem;
+  --font-size-lg: 1.2rem;
+  --font-size-xl: 1.4rem;
+  --font-size-2xl: 1.8rem;
+  --font-size-3xl: 2.5rem;
+  
+  /* Font Weights */
+  --font-weight-light: 200;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 600;
+  
+  /* Z-index */
+  --z-index-base: 1;
+  --z-index-overlay: 2;
+  --z-index-modal: 3;
+} 

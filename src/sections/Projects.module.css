@@ -1,0 +1,79 @@
+.projects {
+  padding: 6rem 2rem;
+  background-color: white;
+  position: relative;
+  z-index: 3;
+}
+
+.projects h2 {
+  text-align: center;
+  margin-bottom: 3rem;
+  font-size: 2.5rem;
+  color: #333;
+}
+
+.projectFilters {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+
+.filterBtn {
+  padding: 0.8rem 1.5rem;
+  border: 2px solid #333;
+  background: transparent;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.filterBtn:hover, .filterBtn.active {
+  background-color: var(--color-peach);
+  color: black;
+  border: 2px solid black;
+}
+
+.projectsGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.projectsGrid > * {
+  width: 350px;
+  flex-shrink: 0;
+  flex-grow: 0;
+}
+
+/* Adjust container width based on screen size */
+@media (min-width: 1024px) {
+  .projectsGrid {
+    width: fit-content;
+    max-width: calc(350px * 3 + 4rem); /* 3 cards + 2 gaps */
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .projectsGrid {
+    width: fit-content;
+    max-width: calc(350px * 2 + 2rem); /* 2 cards + 1 gap */
+  }
+}
+
+@media (max-width: 767px) {
+  .projectsGrid {
+    width: fit-content;
+    max-width: 350px; /* 1 card */
+  }
+}
+
+/* For single card */
+.projectsGrid:only-child {
+  max-width: 400px;
+  margin: 0 auto;
+} 

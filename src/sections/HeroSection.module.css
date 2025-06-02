@@ -1,0 +1,91 @@
+.heroSection {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.heroImage {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  display: block;
+  object-fit: cover;
+  z-index: 1;
+  top: 0;
+  left: 0;
+}
+
+/* Add gradient overlay */
+.heroSection::after {
+  content: '';
+  position: absolute;
+  width: 60%;
+  top: 0;
+  right: 0;
+  color: #fff6e5;
+  height: 100%;
+  background: linear-gradient(to left, rgb(0, 0, 0), rgba(0,0,0,0));
+  z-index: 1;
+}
+
+/* Hero text container */
+.heroTextContainer {
+  position: absolute;
+  right: 25%;
+  top: 40vh;
+  transform: translateX(50%);
+  z-index: 2;
+  text-align: center;
+  width: auto;
+  white-space: nowrap;
+}
+
+.heroTitle {
+  color: #fffdf3;
+  font-family: 'Stalemate', cursive;
+  font-size: 13vw;
+  margin: 0;
+  line-height: 0.3;
+}
+
+.heroSection h2 {
+  color: var(--color-peach);
+  font-size: 2.8vw;
+  font-weight: 400;
+  margin: 0;
+  margin-top: 1vw;
+  line-height: 2;
+}
+
+.heroSection h3 {
+  color: rgb(255, 205, 182);
+  font-size: 1.5vw;
+  font-weight: 200;
+  margin: 0;
+  line-height: 0;
+}
+
+/* Mobile styles */
+@media screen and (max-width: 768px) {
+  .heroTextContainer {
+    right: 35%;
+  }
+
+  .heroSection::after {
+    background: linear-gradient(to left, rgb(0, 0, 0), rgba(0,0,0,0));
+    width: 80%;
+  }
+
+  .heroSection .heroTitle {
+    font-size: 20vw !important;
+  }
+
+  .heroSection h2 {
+    font-size: 4.5vw !important;
+  }
+
+  .heroSection h3 {
+    font-size: 3vw !important;
+  }
+} 
