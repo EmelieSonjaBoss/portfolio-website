@@ -9,8 +9,8 @@ export interface Project {
   description: string;
   tech: string[];
   image: string;
-  liveLink: string;
-  githubLink: string;
+  liveLink?: string;
+  githubLink?: string;
   category: string;
   date: string;
 }
@@ -22,7 +22,6 @@ export const projectsData: Project[] = [
     tech: ["TypeScript", "Vue", "Node.js", "MongoDB", "Express", "JWT", "Pinia", "CORS", "Axios", "Vite", "Mongoose"],
     image: storyshelf,
     liveLink: "https://storyshelf-client.vercel.app/",
-    githubLink: "https://github.com/EmelieSonjaBoss/storyshelf-app",
     category: "Full-Stack",
     date: "May 2025"
   },
@@ -32,7 +31,6 @@ export const projectsData: Project[] = [
     tech: ["Vite", "TypeScript", "SASS", "HTML", "CSS"],
     image: quiz,
     liveLink: "https://medieinstitutet.github.io/fed24d-js-intro-inl-2-quiz-king-edward/",
-    githubLink: "https://github.com/EmelieSonjaBoss/quiz-king-edward",
     category: "Frontend",
     date: "January 2025"
   },
@@ -41,18 +39,16 @@ export const projectsData: Project[] = [
     description: "A RESTful API built with Node.js, Express, and MySQL for managing products and categories in a webshop, featuring full CRUD operations, category-based filtering, and robust validation.",
     tech: ["TypeScript", "Node.js", "Express", "MySQL"],
     image: api,
-    liveLink: "https://project2.com",
-    githubLink: "https://github.com/youruser/project2",
+    githubLink: "https://github.com/EmelieSonjaBoss/api-development-assignment-1",
     category: "API",
     date: "April 2025"
   },
   {
     title: "Nemo's Ice Cream - Frontend",
-    description: "Nemo’s Ice Cream is a ocean-inspired Vue single-page app that showcases artisanal ice cream flavors with smooth animations and responsive navigation. Group project.",
+    description: "Nemo's Ice Cream is a ocean-inspired Vue single-page app that showcases artisanal ice cream flavors with smooth animations and responsive navigation. Group project.",
     tech: ["JavaScript", "Vite", "Vue", "SASS", "HTML", "CSS"],
     image: nemo,
     liveLink: "https://medieinstitutet.github.io/fed24d-grafiska-verktyg-clownfiskarna/",
-    githubLink: "https://github.com/EmelieSonjaBoss/fed24d-grafiska-verktyg-clownfiskarna",
     category: "Frontend",
     date: "March 2025"
   },
@@ -62,7 +58,6 @@ export const projectsData: Project[] = [
     tech: ["JavaScript", "SASS", "HTML", "CSS"],
     image: munkar,
     liveLink: "https://medieinstitutet.github.io/fed24d-js-intro-inl-1-webshop-EmelieSonjaBoss/",
-    githubLink: "https://github.com/EmelieSonjaBoss/donut-webshop",
     category: "Frontend",
     date: "December 2024"
   }

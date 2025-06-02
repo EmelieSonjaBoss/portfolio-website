@@ -27,12 +27,19 @@
   font-size: 1rem;
   transition: all 0.3s ease;
   border: none;
+  outline: none;
 }
 
 .filterBtn:hover, .filterBtn.active {
   background-color: var(--color-peach);
   color: black;
   border: none;
+  outline: none;
+}
+
+.filterBtn:focus {
+  outline: none;
+  box-shadow: none;
 }
 
 .projectsGrid {
@@ -42,13 +49,35 @@
   justify-content: center;
   max-width: 1200px;
   margin: 0 auto;
+  min-height: 400px; /* Ensure consistent height during transitions */
 }
 
 .projectsGrid > * {
   width: 350px;
   flex-shrink: 0;
   flex-grow: 0;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.5s ease forwards;
 }
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Stagger the animation for each card */
+.projectsGrid > *:nth-child(1) { animation-delay: 0.1s; }
+.projectsGrid > *:nth-child(2) { animation-delay: 0.2s; }
+.projectsGrid > *:nth-child(3) { animation-delay: 0.3s; }
+.projectsGrid > *:nth-child(4) { animation-delay: 0.4s; }
+.projectsGrid > *:nth-child(5) { animation-delay: 0.5s; }
 
 /* Adjust container width based on screen size */
 @media (min-width: 1024px) {

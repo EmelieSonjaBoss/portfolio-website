@@ -6,7 +6,7 @@ const AboutMe = () => {
       <div className={styles.content}>
         <div className={styles.textSection}>
           <p className={styles.mainText}>
-            Frontend developer with a passion for clean and responsive web applications. 
+            Web developer with a passion for clean and responsive web applications. 
             Currently specializing in Frontend Development at Medieinstitutet, working with 
             React, TypeScript, and modern web technologies.
           </p>

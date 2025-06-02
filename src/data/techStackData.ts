@@ -25,18 +25,21 @@ export const techStackData = {
     'dotenv'
   ],
   design: [
-    'UX & UI Design',
-    'Figma & Prototyping',
-    'Responsive Layouts',
+    'UX Research & Analysis',
+    'UI Design Principles',
+    'Figma Prototyping',
+    'User Flow Design',
+    'Responsive Design',
     'Accessibility (a11y)'
   ],
   tools: [
     'Git & GitHub',
-    'Postman, Insomnia',
+    'VS Code & Cursor IDE',
+    'Postman & Insomnia',
     'npm',
-    'Cursor IDE',
+    'Docker',
     'ESLint & Prettier',
-    'Docker'
+    'MongoDB Compass'
   ],
   methodologies: [
     'Agile & Scrum',

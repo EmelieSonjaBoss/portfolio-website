@@ -5,8 +5,8 @@ interface ProjectCardProps {
   description: string;
   tech: string[];
   image: string;
-  liveLink: string;
-  githubLink: string;
+  liveLink?: string;
+  githubLink?: string;
   date: string;
 }
 
@@ -17,8 +17,11 @@ const ProjectCard = ({ title, description, tech, image, liveLink, githubLink, da
         <img src={image} alt={title} />
         <div className={styles.projectOverlay}>
           <div className={styles.projectLinks}>
-            <a href={liveLink} target="_blank" rel="noopener noreferrer">Live Demo</a>
-            <a href={githubLink} target="_blank" rel="noopener noreferrer">GitHub</a>
+            {liveLink ? (
+              <a href={liveLink} target="_blank" rel="noopener noreferrer">Live Demo</a>
+            ) : githubLink ? (
+              <a href={githubLink} target="_blank" rel="noopener noreferrer">View on GitHub</a>
+            ) : null}
           </div>
         </div>
       </div>
