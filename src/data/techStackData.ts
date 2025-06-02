@@ -4,12 +4,12 @@ export const techStackData = {
     'Vue.js',
     'TypeScript',
     'JavaScript',
-    'HTML/CSS', 
+    'HTML', 
     'SASS/SCSS',
     'Vite',
     'Axios',
     'Consuming REST APIs',
-    'Pinia (State Management)'
+    'Pinia'
   ],
   backend: [
     'Node.js',
@@ -21,46 +21,29 @@ export const techStackData = {
     'Bcrypt',
     'RESTful APIs Development',
     'CORS',
-    'Middleware Development',
-    'Database Modeling',
     'API Security',
     'dotenv'
   ],
   design: [
-    'UX Design',
-    'Figma',
-    'Responsive Design',
-    'UI/UX Best Practices',
-    'Wireframing',
-    'Prototyping',
-    'Color Theory',
-    'Typography',
-    'User Flow Design',
+    'UX & UI Design',
+    'Figma & Prototyping',
+    'Responsive Layouts',
     'Accessibility (a11y)'
   ],
   tools: [
-    'Git',
-    'GitHub',
-    'Insomnia',
+    'Git & GitHub',
+    'Postman, Insomnia',
+    'npm',
     'Cursor IDE',
-    'VS Code',
-    'API Development',
-    'Postman',
-    'Chrome DevTools',
-    'npm/yarn',
-    'ESLint',
-    'Prettier',
-    'Docker',
+    'ESLint & Prettier',
+    'Docker'
   ],
   methodologies: [
-    'Agile Development',
-    'Scrum',
-    'Database Design',
+    'Agile & Scrum',
+    'Version Control & Code Review',
     'RESTful Architecture',
-    'Version Control',
-    'Code Review',
-    'Clean Code Principles',
-    'Component-Based Architecture',
-    'Responsive Design Patterns'
+    'Database Design',
+    'Responsive Design Patterns',
+    'Component-Based Design'
   ]
 }; 

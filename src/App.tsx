@@ -3,6 +3,7 @@ import TechStack from './sections/TechStack'
 import Projects from './sections/Projects'
 import DesignShowcase from './sections/DesignShowcase'
 import AboutMe from './sections/AboutMe'
+import Footer from './sections/Footer'
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <TechStack />
       <Projects />
       <DesignShowcase />
+      <Footer />
     </>
   )
 }

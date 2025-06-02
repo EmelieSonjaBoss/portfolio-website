@@ -1,0 +1,124 @@
+.footer {
+  background-color: #353231;
+  color: #fff;
+  padding: 6rem;
+}
+
+.footerContent {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.contactInfo h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  margin-left: 2rem;
+  color: #FFE4D6;
+  text-align: left;
+}
+
+.contactLinks {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-left: 2rem;
+}
+
+.contactLink {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+.contactLink:hover {
+  color: #FFE4D6;
+}
+
+.contactLink i {
+  font-size: 1.5rem;
+}
+
+.contactForm {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 2rem;
+  border-radius: 12px;
+}
+
+.contactForm h3 {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  color: #FFE4D6;
+}
+
+.formGroup {
+  margin-bottom: 1.5rem;
+}
+
+.formGroup label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #FFE4D6;
+}
+
+.formGroup input,
+.formGroup textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.05);
+  color: #fff;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.formGroup input:focus,
+.formGroup textarea:focus {
+  outline: none;
+  border-color: #FFE4D6;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.submitBtn {
+  width: 100%;
+  padding: 1rem;
+  border: none;
+  border-radius: 6px;
+  background: #FFE4D6;
+  color: #1a1a1a;
+  font-size: 1.1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.submitBtn:hover {
+  background: #fff;
+  transform: translateY(-2px);
+}
+
+.submitBtn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+  background: #ccc;
+}
+
+.errorMessage {
+  color: #ff6b6b;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .footerContent {
+    grid-template-columns: 1fr;
+  }
+} 
