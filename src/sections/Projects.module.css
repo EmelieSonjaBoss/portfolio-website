@@ -79,6 +79,12 @@
 .projectsGrid > *:nth-child(4) { animation-delay: 0.4s; }
 .projectsGrid > *:nth-child(5) { animation-delay: 0.5s; }
 
+/* For single card */
+.projectsGrid:only-child {
+  max-width: 400px;
+  margin: 0 auto;
+} 
+
 /* Adjust container width based on screen size */
 @media (min-width: 1024px) {
   .projectsGrid {
@@ -92,6 +98,7 @@
     width: fit-content;
     max-width: calc(350px * 2 + 2rem); /* 2 cards + 1 gap */
   }
+
 }
 
 @media (max-width: 767px) {
@@ -101,8 +108,36 @@
   }
 }
 
-/* For single card */
-.projectsGrid:only-child {
-  max-width: 400px;
-  margin: 0 auto;
-} 
+@media (max-width: 500px) { /*Super small screens*/
+  .filterBtn {
+    padding: 0.5rem;
+    padding-left: 0.7rem;
+    padding-right: 0.7rem;
+    max-height: fit-content;
+  }
+
+  .projectsGrid:only-child {
+    max-width: 80%;
+  } 
+}
+
+/* Add new media query for extra small screens */
+@media (max-width: 400px) {
+  .projectsGrid {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  .projectsGrid > * {
+    width: 100%;
+  }
+
+  .projects {
+    padding: 4rem 1rem;
+  }
+
+  .filterBtn {
+    font-size: 0.9rem;
+  }
+}
+

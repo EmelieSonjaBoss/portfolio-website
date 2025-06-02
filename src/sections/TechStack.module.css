@@ -100,8 +100,8 @@
 }
 
 .skillGroupHeader .icon {
-  width: 28px;
-  height: 28px;
+  width: 30px;
+  height: 30px;
   color: var(--color-mauve);
   opacity: 0.9;
 }
@@ -150,5 +150,120 @@
   
   .additionalSkills {
     padding: 2rem 1.5rem;
+  }
+}
+
+/* Add mobile responsiveness */
+@media (max-width: 768px) {
+  .techStack {
+    padding: 3rem 1.5rem;
+  }
+
+  .techStack h2 {
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+  }
+
+  .mainSkills {
+    gap: 2.5rem;
+    margin-bottom: 4rem;
+  }
+
+  .stackCategory h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .techList {
+    gap: 1rem;
+  }
+
+  .techItem {
+    padding: 0.8rem 1.5rem;
+    font-size: 1.1rem;
+  }
+
+  .additionalSkills h3 {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .skillGroup {
+    padding: 1.2rem;
+    min-width: 250px;
+  }
+
+  .skillGroup h4 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+
+  .skillGroupHeader {
+    gap: 0.6rem;
+    margin-bottom: 1rem;
+  }
+
+  .skillGroupHeader .icon {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+/* Extra small screens */
+@media (max-width: 400px) {
+  .techStack {
+    padding: 2rem 1rem;
+  }
+
+  .techStack h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .mainSkills {
+    gap: 2rem;
+    margin-bottom: 3rem;
+  }
+
+  .stackCategory h3 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+  }
+
+  .techItem {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.95rem;
+  }
+
+  .additionalSkills {
+    padding: 1.5rem 1rem;
+  }
+
+  .additionalSkills h3 {
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .skillGroups {
+    gap: 1.5rem;
+  }
+
+  .skillGroup {
+    padding: 1rem;
+    min-width: 200px;
+  }
+
+  .skillGroup h4 {
+    font-size: 1.1rem;
+  }
+
+  .compactTechItem {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  .skillGroupHeader .icon {
+    width: 20px;
+    height: 20px;
   }
 } 

@@ -65,6 +65,7 @@
   display: block;
   margin-bottom: 0.5rem;
   color: #FFE4D6;
+  font-size: 1.1rem;
 }
 
 .formGroup input,
@@ -117,8 +118,92 @@
   text-align: center;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   .footerContent {
     grid-template-columns: 1fr;
+    gap: 3rem;
   }
-} 
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .footer {
+    padding: 4rem 2rem;
+  }
+
+  .contactInfo h2 {
+    font-size: 2.2rem;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .contactLinks {
+    margin: 4vw;
+    align-items: left;
+  }
+
+  .contactLink {
+    font-size: 1.1rem;
+  }
+
+  .contactLink i {
+    font-size: 1.3rem;
+  }
+
+  .contactForm h3 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .formGroup label {
+    font-size: 1rem;
+  }
+}
+
+/* Extra small screens */
+@media (max-width: 400px) {
+  .footer {
+    padding: 3rem 1rem;
+  }
+
+  .contactInfo h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .contactLink {
+    font-size: 1rem;
+  }
+
+  .contactLink i {
+    font-size: 1.2rem;
+  }
+
+  .contactForm {
+    padding: 1.5rem 1rem;
+  }
+
+  .contactForm h3 {
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .formGroup label {
+    font-size: 0.95rem;
+  }
+
+  .formGroup input,
+  .formGroup textarea {
+    font-size: 0.95rem;
+    padding: 0.7rem;
+  }
+
+  .submitBtn {
+    font-size: 1rem;
+    padding: 0.8rem;
+  }
+
+  .errorMessage {
+    font-size: 0.85rem;
+  }
+}

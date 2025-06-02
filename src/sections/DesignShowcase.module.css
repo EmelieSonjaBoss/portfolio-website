@@ -47,6 +47,7 @@
 .projectInfo p {
   color: var(--color-text-secondary);
   margin-bottom: 1rem;
+  font-size: 1.1rem;
 }
 
 .figmaLink {
@@ -113,5 +114,65 @@
 
   .imageScroll {
     flex: 2;
+  }
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .designShowcase {
+    padding: 3rem 1.5rem;
+  }
+
+  .designShowcase h2 {
+    font-size: 2.2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .projectInfo h3 {
+    font-size: 1.3rem;
+  }
+
+  .projectInfo p {
+    font-size: 1rem;
+  }
+
+  .designImage {
+    height: 180px;
+  }
+}
+
+/* Extra small screens */
+@media (max-width: 400px) {
+  .designShowcase {
+    padding: 2rem 1rem;
+  }
+
+  .designShowcase h2 {
+    font-size: 1.8rem;
+  }
+
+  .subtitle {
+    font-size: 0.95rem;
+  }
+
+  .projectInfo h3 {
+    font-size: 1.2rem;
+  }
+
+  .projectInfo p {
+    font-size: 0.95rem;
+  }
+
+  .figmaLink {
+    font-size: 0.85rem;
+  }
+
+  .designImage {
+    height: 160px;
   }
 } 

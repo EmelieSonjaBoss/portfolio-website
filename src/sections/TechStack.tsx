@@ -28,8 +28,8 @@ const TechStack = () => {
               </div>
             ))}
           </div>
+          </div>
         </div>
-      </div>
 
       {/* Additional Skills */}
       <div className={styles.additionalSkills}>
@@ -45,13 +45,13 @@ const TechStack = () => {
               <h4>Design Skills</h4>
             </div>
             <div className={styles.compactTechList}>
-              {techStackData.design.map((tech, index) => (
+            {techStackData.design.map((tech, index) => (
                 <div key={`design-${index}`} className={styles.compactTechItem}>
-                  {tech}
-                </div>
-              ))}
-            </div>
+                {tech}
+              </div>
+            ))}
           </div>
+        </div>
 
           <div className={styles.skillGroup}>
             <div className={styles.skillGroupHeader}>
@@ -63,13 +63,13 @@ const TechStack = () => {
               <h4>Development Tools</h4>
             </div>
             <div className={styles.compactTechList}>
-              {techStackData.tools.map((tech, index) => (
+            {techStackData.tools.map((tech, index) => (
                 <div key={`tools-${index}`} className={styles.compactTechItem}>
-                  {tech}
-                </div>
-              ))}
-            </div>
+                {tech}
+              </div>
+            ))}
           </div>
+        </div>
 
           <div className={styles.skillGroup}>
             <div className={styles.skillGroupHeader}>
@@ -81,11 +81,11 @@ const TechStack = () => {
               <h4>Methodologies & Best Practices</h4>
             </div>
             <div className={styles.compactTechList}>
-              {techStackData.methodologies.map((tech, index) => (
+            {techStackData.methodologies.map((tech, index) => (
                 <div key={`methodologies-${index}`} className={styles.compactTechItem}>
-                  {tech}
-                </div>
-              ))}
+                {tech}
+              </div>
+            ))}
             </div>
           </div>
         </div>

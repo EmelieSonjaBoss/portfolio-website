@@ -59,7 +59,7 @@
 }
 
 .heroSection h3 {
-  color: rgb(255, 205, 182);
+  color: var(--color-peach);
   font-size: 1.5vw;
   font-weight: 100;
   margin: 0;

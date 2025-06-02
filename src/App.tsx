@@ -6,16 +6,16 @@ import AboutMe from './sections/AboutMe'
 import Footer from './sections/Footer'
 
 function App() {
-  return (
-    <>
+ return (
+  <>
       <HeroSection />
       <AboutMe />
       <TechStack />
       <Projects />
       <DesignShowcase />
       <Footer />
-    </>
-  )
+  </>
+ )
 }
 
 export default App
