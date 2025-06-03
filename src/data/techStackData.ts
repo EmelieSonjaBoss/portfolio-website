@@ -9,6 +9,7 @@ export const techStackData = {
     'Vite',
     'Axios',
     'Consuming REST APIs',
+    'PWA',
     'Pinia'
   ],
   backend: [
