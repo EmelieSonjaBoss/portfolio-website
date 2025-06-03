@@ -30,7 +30,8 @@ export const techStackData = {
     'Figma Prototyping',
     'User Flow Design',
     'Responsive Design',
-    'Accessibility (a11y)'
+    'Accessibility (a11y)',
+    'Photoshop'
   ],
   tools: [
     'Git & GitHub',
