@@ -6,7 +6,7 @@ import { projectsData } from '../data/projectsData';
 const Projects = () => {
   const [activeFilter, setActiveFilter] = useState('All');
   const [animateKey, setAnimateKey] = useState(0);
-  const filters = ['All', 'Full-Stack', 'Frontend', 'API'];
+  const filters = ['All', 'Full-Stack', 'Frontend', 'Backend'];
 
   const filteredProjects = activeFilter === 'All'
     ? projectsData

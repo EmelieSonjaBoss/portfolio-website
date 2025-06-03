@@ -40,7 +40,7 @@ export const projectsData: Project[] = [
     tech: ["TypeScript", "Node.js", "Express", "MySQL"],
     image: api,
     githubLink: "https://github.com/EmelieSonjaBoss/api-development-assignment-1",
-    category: "API",
+    category: "Backend",
     date: "April 2025"
   },
   {
