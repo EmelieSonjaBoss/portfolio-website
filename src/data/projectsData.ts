@@ -3,6 +3,7 @@ import quiz from '../assets/images/quiz.jpg'
 import api from '../assets/images/api.jpg'
 import nemo from '../assets/images/nemo.jpg'
 import munkar from '../assets/images/munkar2.jpg'
+import packingList from '../assets/images/packlistan.jpg'
 
 export interface Project {
   title: string;
@@ -16,6 +17,15 @@ export interface Project {
 }
 
 export const projectsData: Project[] = [
+  {
+    title: "The packing list - Frontend",
+    description: "A Progressive Web App created with React and TypeScript that allows users to create and manage packing lists. The app uses local storage and has offline capabilities.",
+    tech: ["React", "TypeScript", "PWA", "Vite", "CSS"],
+    image: packingList,
+    liveLink: "https://medieinstitutet.github.io/fed24d-the-last-todos-EmelieSonjaBoss/",
+    category: "Frontend",
+    date: "June 2025"
+  },
   {
     title: "Storyshelf - FullStack",
     description: "StoryShelf is a full-stack MEVN web app where users can browse and review books, while admins securely manage users and content through a role-based panel using JWT authentication. Group project.",
