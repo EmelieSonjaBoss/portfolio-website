@@ -22,7 +22,7 @@ export const projectsData: Project[] = [
     description: "A Progressive Web App created with React and TypeScript that allows users to create and manage packing lists. The app uses local storage and has offline capabilities.",
     tech: ["React", "TypeScript", "PWA", "Vite", "CSS"],
     image: packingList,
-    liveLink: "https://medieinstitutet.github.io/fed24d-the-last-todos-EmelieSonjaBoss/",
+    liveLink: "https://emeliesonjaboss.github.io/packing-list/",
     category: "Frontend",
     date: "June 2025"
   },
