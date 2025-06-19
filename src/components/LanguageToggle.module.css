@@ -1,0 +1,47 @@
+.languageToggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+  background: rgba(255, 255, 255, 0.9);
+  border: 2px solid #333;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.languageToggle:hover {
+  background: rgba(255, 255, 255, 1);
+  transform: scale(1.1);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  border-color: var(--color-mauve);
+}
+
+.languageToggle:active {
+  transform: scale(0.95);
+}
+
+.languageToggle:focus {
+  outline: none;
+  border-color: var(--color-mauve);
+  box-shadow: 0 0 8px 3px rgba(0, 0, 0, 0.39);
+}
+
+@media (max-width: 768px) {
+  .languageToggle {
+    top: 15px;
+    right: 15px;
+    width: 45px;
+    height: 45px;
+    font-size: 12px;
+  }
+} 

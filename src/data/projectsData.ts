@@ -6,8 +6,8 @@ import munkar from '../assets/images/munkar2.jpg'
 import packingList from '../assets/images/packlistan.jpg'
 
 export interface Project {
-  title: string;
-  description: string;
+  titleKey: string;
+  descriptionKey: string;
   tech: string[];
   image: string;
   liveLink?: string;
@@ -18,8 +18,8 @@ export interface Project {
 
 export const projectsData: Project[] = [
   {
-    title: "The packing list - Frontend",
-    description: "A Progressive Web App created with React and TypeScript that allows users to create and manage packing lists. The app uses local storage and has offline capabilities.",
+    titleKey: "projects.packingList.title",
+    descriptionKey: "projects.packingList.description",
     tech: ["React", "TypeScript", "PWA", "Vite", "CSS"],
     image: packingList,
     liveLink: "https://emeliesonjaboss.github.io/packing-list/",
@@ -27,8 +27,8 @@ export const projectsData: Project[] = [
     date: "June 2025"
   },
   {
-    title: "Storyshelf - FullStack",
-    description: "StoryShelf is a full-stack MEVN web app where users can browse and review books, while admins securely manage users and content through a role-based panel using JWT authentication. Group project.",
+    titleKey: "projects.storyshelf.title",
+    descriptionKey: "projects.storyshelf.description",
     tech: ["TypeScript", "Vue", "Node.js", "MongoDB", "Express", "JWT", "Pinia", "CORS", "Axios", "Vite", "Mongoose"],
     image: storyshelf,
     liveLink: "https://storyshelf-client.vercel.app/",
@@ -36,8 +36,8 @@ export const projectsData: Project[] = [
     date: "May 2025"
   },
   {
-    title: "The Quiz - Frontend",
-    description: "A quiz game with a timer and score tracking. Group project.",
+    titleKey: "projects.quiz.title",
+    descriptionKey: "projects.quiz.description",
     tech: ["Vite", "TypeScript", "SASS", "HTML", "CSS"],
     image: quiz,
     liveLink: "https://medieinstitutet.github.io/fed24d-js-intro-inl-2-quiz-king-edward/",
@@ -45,8 +45,8 @@ export const projectsData: Project[] = [
     date: "January 2025"
   },
   {
-    title: "API - Backend",
-    description: "A RESTful API built with Node.js, Express, and MySQL for managing products and categories in a webshop, featuring full CRUD operations, category-based filtering, and robust validation.",
+    titleKey: "projects.api.title",
+    descriptionKey: "projects.api.description",
     tech: ["TypeScript", "Node.js", "Express", "MySQL"],
     image: api,
     githubLink: "https://github.com/EmelieSonjaBoss/api-development-assignment-1",
@@ -54,8 +54,8 @@ export const projectsData: Project[] = [
     date: "April 2025"
   },
   {
-    title: "Nemo's Ice Cream - Frontend",
-    description: "Nemo's Ice Cream is a ocean-inspired Vue single-page app that showcases artisanal ice cream flavors with smooth animations and responsive navigation. Group project.",
+    titleKey: "projects.nemo.title",
+    descriptionKey: "projects.nemo.description",
     tech: ["JavaScript", "Vite", "Vue", "SASS", "HTML", "CSS"],
     image: nemo,
     liveLink: "https://medieinstitutet.github.io/fed24d-grafiska-verktyg-clownfiskarna/",
@@ -63,8 +63,8 @@ export const projectsData: Project[] = [
     date: "March 2025"
   },
   {
-    title: "The Donut shop - Frontend",
-    description: "One of my first projects - an e-commerce interface with cart functionality and payment integration.",
+    titleKey: "projects.donutShop.title",
+    descriptionKey: "projects.donutShop.description",
     tech: ["JavaScript", "SASS", "HTML", "CSS"],
     image: munkar,
     liveLink: "https://medieinstitutet.github.io/fed24d-js-intro-inl-1-webshop-EmelieSonjaBoss/",

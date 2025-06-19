@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import styles from './DesignShowcase.module.css';
 import fika1 from '../assets/images/fika1.jpg';
 import fika2 from '../assets/images/fika2.jpg';
@@ -12,28 +13,29 @@ import rest4 from '../assets/images/rest4.jpg';
 import rest5 from '../assets/images/rest5.jpg';
 
 interface DesignProject {
-  title: string;
-  description: string;
+  titleKey: string;
+  descriptionKey: string;
   images: string[];
   figmaLink: string;
 }
 
 const designProjects: DesignProject[] = [
   {
-    title: "Fikafinder",
-    description: "UX/UI design for a café discovery application. Group project.",
+    titleKey: "designProjects.fikafinder.title",
+    descriptionKey: "designProjects.fikafinder.description",
     images: [fika1, fika5, fika2, fika3, fika4],
     figmaLink: "https://www.figma.com/proto/7Zp71DUytHbfHRE0oIpuMR/Fika-Finder?node-id=93-3711&p=f&t=ILD26o72kk9rlShS-1&scaling=min-zoom&content-scaling=fixed&page-id=17%3A3"
   },
   {
-    title: "Rädda Resten",
-    description: "UX/UI design for a food waste reduction app. Group project.",
+    titleKey: "designProjects.raddaResten.title",
+    descriptionKey: "designProjects.raddaResten.description",
     images: [rest1, rest2, rest3, rest4, rest5],
     figmaLink: "https://www.figma.com/proto/1N3tOmFaCJwT3YA3pLFx4x/UX-Grupp-7?node-id=257-392&p=f&t=TkthAaH3XlVtFUnz-1&scaling=scale-down&content-scaling=fixed&page-id=215%3A2&starting-point-node-id=257%3A392&show-proto-sidebar=1"
   }
 ];
 
 const DesignShowcase = () => {
+  const { t } = useTranslation();
   const projectRefs = [useRef<HTMLDivElement>(null), useRef<HTMLDivElement>(null)];
   const [visible, setVisible] = useState([false, false]);
 
@@ -67,8 +69,8 @@ const DesignShowcase = () => {
 
   return (
     <section className={styles.designShowcase}>
-      <h2>Design Work</h2>
-      <p className={styles.subtitle}>Additional UX/UI Design Projects</p>
+      <h2>{t('designShowcaseh2')}</h2>
+      <p className={styles.subtitle}>{t('designShowcaseSubtitle')}</p>
       <div className={styles.projectsContainer}>
         {designProjects.map((project, index) => (
           <div
@@ -77,10 +79,10 @@ const DesignShowcase = () => {
             className={`${styles.designProject} ${styles.fadeInUp} ${visible[index] ? styles.visible : ''}`}
           >
             <div className={styles.projectInfo}>
-              <h3>{project.title}</h3>
-              <p>{project.description}</p>
+              <h3>{t(project.titleKey)}</h3>
+              <p>{t(project.descriptionKey)}</p>
               <a href={project.figmaLink} target="_blank" rel="noopener noreferrer" className={styles.figmaLink}>
-                View in Figma
+                {t('designShowcaseFigmaLink')}
               </a>
             </div>
             <div className={styles.imageScroll}>
@@ -88,7 +90,7 @@ const DesignShowcase = () => {
                 <img 
                   key={imgIndex} 
                   src={image} 
-                  alt={`${project.title} design ${imgIndex + 1}`} 
+                  alt={`${t(project.titleKey)} design ${imgIndex + 1}`} 
                   className={styles.designImage}
                 />
               ))}

@@ -1,0 +1,124 @@
+{
+    "heroh2": "Frontendutvecklare",
+    "heroh3": "Skapar digitala lösningar",
+    "aboutmaintext": "Webbutvecklare med en passion för välstrukturerade och responsiva webbapplikationer. Studerar för närvarande Frontendutveckling på Medieinstitutet med fokus på TypeScript, React och andra moderna teknologier.",
+    "abouthighlight1": "Ett växande intresse för fullstackutveckling - att kombinera frontend med backendprojekt har blivit en personlig favorit",
+    "abouthighlight2": "8 år som egen företagare i hästbranchen, vilket har gett mig praktiska problemlösnings- och affärsfärdigheter som nu gynnar mig i min övergång till tech",
+    "abouthighlight3": "Bakgrund inom fotografi, vilket har gett mig ett tränat öga för detaljer och visuell balans",
+    "techstackh2": "Tekniska Färdigheter",
+    "techstackh3frontend": "Frontend-utveckling",
+    "techstackh3backend": "Backend-utveckling",
+    "techstackh3additional": "Ytterligare Kompetenser",
+    "techstackh4design": "Designfärdigheter",
+    "techstackh4development": "Utvecklingsverktyg",
+    "techstackh4methodologies": "Metoder & och Best Practices",
+    "projectsh2": "Utvalda Projekt",
+    "projectsFilterAll": "Alla",
+    "projectsFilterFullStack": "Full-Stack",
+    "projectsFilterFrontend": "Frontend",
+    "projectsFilterBackend": "Backend",
+    "designShowcaseh2": "Designarbete",
+    "designShowcaseSubtitle": "Ytterligare UX/UI Designprojekt",
+    "designShowcaseFigmaLink": "Visa i Figma",
+    "footerh2": "Ta kontakt",
+    "footerh3": "Skicka mig ett Meddelande",
+    "footerEmailLabel": "Din E-post",
+    "footerEmailPlaceholder": "din.epost@exempel.se",
+    "footerMessageLabel": "Meddelande",
+    "footerMessagePlaceholder": "Ditt meddelande här...",
+    "footerSubmitButton": "Skicka Meddelande",
+    "footerSubmittedMessage": "Meddelande Skickat!",
+    "footerErrorMessage": "Kunde inte skicka meddelande. Försök igen.",
+    "languageToggle": "Språk",
+    "designProjects": {
+        "fikafinder": {
+            "title": "Fikafinder",
+            "description": "UX/UI-design för en fika-applikation. Grupprojekt."
+        },
+        "raddaResten": {
+            "title": "Rädda Resten",
+            "description": "UX/UI-design för en app för att minska matsvinn. Grupprojekt."
+        }
+    },
+    "projects": {
+        "packingList": {
+            "title": "Packlistan - Frontend",
+            "description": "En Progressive Web App skapad med React och TypeScript som låter användare skapa och hantera packlistor. Appen använder local storage och har offline-funktionalitet."
+        },
+        "storyshelf": {
+            "title": "Storyshelf - FullStack",
+            "description": "StoryShelf är en fullstack MEVN-webbapp där användare kan bläddra mellan böcker, medan administratörer säkert hanterar användare och innehåll genom en rollbaserad panel med JWT-autentisering. Grupprojekt."
+        },
+        "quiz": {
+            "title": "Quizet - Frontend",
+            "description": "Ett quizspel med timer och poängspårning. Grupprojekt."
+        },
+        "api": {
+            "title": "API - Backend",
+            "description": "Ett REST API byggt med Node.js, Express och MySQL för att hantera produkter och kategorier i en webbutik, med fullständiga CRUD-operationer, kategoribaserad filtrering och robust validering."
+        },
+        "nemo": {
+            "title": "Nemo's Ice Cream - Frontend",
+            "description": "Nemo's glassbar är en havsinspirerad Vue single-page app som visar upp olika glassmaker med smidiga animationer och responsiv navigation. Grupprojekt där syftet var att implementera en design med pixel-perfect matchning."
+        },
+        "donutShop": {
+            "title": "Gottfrids Munkshop - Frontend",
+            "description": "Ett av mina första projekt - ett e-handelsgränssnitt med kundvagnsfunktionalitet och betalningsintegration."
+        }
+    },
+    "techStack": {
+        "frontend": [
+            "React.js",
+            "Vue.js",
+            "TypeScript",
+            "JavaScript",
+            "HTML",
+            "SASS/SCSS",
+            "Vite",
+            "Axios",
+            "Integration av REST API:er",
+            "PWA",
+            "Pinia"
+        ],
+        "backend": [
+            "Node.js",
+            "Express",
+            "MongoDB",
+            "Mongoose",
+            "MySQL",
+            "JWT-autentisering",
+            "Bcrypt",
+            "RESTful API-utveckling",
+            "CORS",
+            "API-säkerhet",
+            "dotenv"
+        ],
+        "design": [
+            "UX-forskning & Analys",
+            "UI-designprinciper",
+            "Figma-prototypning",
+            "Användarflödesdesign",
+            "Responsiv design",
+            "Tillgänglighet (a11y)",
+            "Photoshop"
+        ],
+        "tools": [
+            "Git & GitHub",
+            "VS Code",
+            "Cursor IDE",
+            "Postman & Insomnia",
+            "npm",
+            "Docker",
+            "ESLint & Prettier",
+            "MongoDB Compass"
+        ],
+        "methodologies": [
+            "Agile & Scrum",
+            "Versionshantering & Kodgranskning",
+            "RESTful arkitektur",
+            "Databasdesign",
+            "Responsiva designmönster",
+            "Komponentbaserad design"
+        ]
+    }
+}

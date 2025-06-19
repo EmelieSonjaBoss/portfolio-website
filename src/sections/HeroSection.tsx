@@ -1,8 +1,10 @@
 import { useEffect, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import styles from './HeroSection.module.css';
 import heroImage from '../assets/images/imagesmall2.jpg';
 
 const HeroSection = () => {
+  const { t } = useTranslation();
   const [titleVisible, setTitleVisible] = useState(false);
   const [subtitleVisible, setSubtitleVisible] = useState(false);
   const [descVisible, setDescVisible] = useState(false);
@@ -18,8 +20,8 @@ const HeroSection = () => {
       <img src={heroImage} alt="Hero background" className={styles.heroImage} />
       <div className={styles.heroTextContainer}>
         <h1 className={`${styles.heroTitle} ${styles.slideInRight} ${titleVisible ? styles.visible : ''}`}>EmelieBoss</h1>
-        <h2 className={`${styles.slideDownTop} ${subtitleVisible ? styles.visible : ''}`}>Frontend Developer</h2>
-        <h3 className={`${styles.slideDownTop} ${descVisible ? styles.visible : ''}`}>{`- Crafting Digital Solutions -`}</h3>
+        <h2 className={`${styles.slideDownTop} ${subtitleVisible ? styles.visible : ''}`}>{t('heroh2')}</h2>
+        <h3 className={`${styles.slideDownTop} ${descVisible ? styles.visible : ''}`}>{`- ${t('heroh3')} -`}</h3>
       </div>
     </section>
   );

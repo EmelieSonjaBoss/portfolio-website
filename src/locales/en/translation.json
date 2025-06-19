@@ -1,0 +1,124 @@
+{
+    "heroh2": "Frontend Developer",
+    "heroh3": "Crafting digital solutions",
+    "aboutmaintext": "Web developer with a passion for clean and responsive web applications. Currently specializing in Frontend Development at Medieinstitutet, working with React, TypeScript, and modern web technologies.",
+    "abouthighlight1": "A growing interest in full-stack development — combining frontend with backend projects has become a personal favorite",
+    "abouthighlight2": "8 years as a self-employed farrier, gaining practical problem-solving and business skills that now support my transition into tech",
+    "abouthighlight3": "Background in photography, bringing a trained eye for visual balance, detail, and user-centered design",
+    "techstackh2": "Technical Skills",
+    "techstackh3frontend": "Frontend Development",
+    "techstackh3backend": "Backend Development",
+    "techstackh3additional": "Additional Competencies",
+    "techstackh4design": "Design Skills",
+    "techstackh4development": "Development Tools",
+    "techstackh4methodologies": "Methodologies & Best Practices",
+    "projectsh2": "Featured Projects",
+    "projectsFilterAll": "All",
+    "projectsFilterFullStack": "Full-Stack",
+    "projectsFilterFrontend": "Frontend",
+    "projectsFilterBackend": "Backend",
+    "designShowcaseh2": "Design Work",
+    "designShowcaseSubtitle": "Additional UX/UI Design Projects",
+    "designShowcaseFigmaLink": "View in Figma",
+    "footerh2": "Let's Connect",
+    "footerh3": "Send Me a Message",
+    "footerEmailLabel": "Your Email",
+    "footerEmailPlaceholder": "your.email@example.com",
+    "footerMessageLabel": "Message",
+    "footerMessagePlaceholder": "Your message here...",
+    "footerSubmitButton": "Send Message",
+    "footerSubmittedMessage": "Message Sent!",
+    "footerErrorMessage": "Failed to send message. Please try again.",
+    "languageToggle": "Language",
+    "designProjects": {
+        "fikafinder": {
+            "title": "Fikafinder",
+            "description": "UX/UI design for a café discovery application. Group project."
+        },
+        "raddaResten": {
+            "title": "Rädda Resten",
+            "description": "UX/UI design for a food waste reduction app. Group project."
+        }
+    },
+    "projects": {
+        "packingList": {
+            "title": "The packing list - Frontend",
+            "description": "A Progressive Web App created with React and TypeScript that allows users to create and manage packing lists. The app uses local storage and has offline capabilities."
+        },
+        "storyshelf": {
+            "title": "Storyshelf - FullStack",
+            "description": "StoryShelf is a full-stack MEVN web app where users can browse and review books, while admins securely manage users and content through a role-based panel using JWT authentication. Group project."
+        },
+        "quiz": {
+            "title": "The Quiz - Frontend",
+            "description": "A quiz game with a timer and score tracking. Group project."
+        },
+        "api": {
+            "title": "API - Backend",
+            "description": "A RESTful API built with Node.js, Express, and MySQL for managing products and categories in a webshop, featuring full CRUD operations, category-based filtering, and robust validation."
+        },
+        "nemo": {
+            "title": "Nemo's Ice Cream - Frontend",
+            "description": "Nemo's Ice Cream is a ocean-inspired Vue single-page app that showcases artisanal ice cream flavors with smooth animations and responsive navigation. Group project."
+        },
+        "donutShop": {
+            "title": "The Donut shop - Frontend",
+            "description": "One of my first projects - an e-commerce interface with cart functionality and payment integration."
+        }
+    },
+    "techStack": {
+        "frontend": [
+            "React.js",
+            "Vue.js",
+            "TypeScript",
+            "JavaScript",
+            "HTML",
+            "SASS/SCSS",
+            "Vite",
+            "Axios",
+            "Consuming REST APIs",
+            "PWA",
+            "Pinia"
+        ],
+        "backend": [
+            "Node.js",
+            "Express",
+            "MongoDB",
+            "Mongoose",
+            "MySQL",
+            "JWT Authentication",
+            "Bcrypt",
+            "RESTful APIs Development",
+            "CORS",
+            "API Security",
+            "dotenv"
+        ],
+        "design": [
+            "UX Research & Analysis",
+            "UI Design Principles",
+            "Figma Prototyping",
+            "User Flow Design",
+            "Responsive Design",
+            "Accessibility (a11y)",
+            "Photoshop"
+        ],
+        "tools": [
+            "Git & GitHub",
+            "VS Code",
+            "Cursor IDE",
+            "Postman & Insomnia",
+            "npm",
+            "Docker",
+            "ESLint & Prettier",
+            "MongoDB Compass"
+        ],
+        "methodologies": [
+            "Agile & Scrum",
+            "Version Control & Code Review",
+            "RESTful Architecture",
+            "Database Design",
+            "Responsive Design Patterns",
+            "Component-Based Design"
+        ]
+    }
+}

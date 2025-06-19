@@ -1,12 +1,19 @@
 import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import styles from './Projects.module.css';
 import ProjectCard from '../components/ProjectCard';
 import { projectsData } from '../data/projectsData';
 
 const Projects = () => {
+  const { t } = useTranslation();
   const [activeFilter, setActiveFilter] = useState('All');
   const [animateKey, setAnimateKey] = useState(0);
-  const filters = ['All', 'Full-Stack', 'Frontend', 'Backend'];
+  const filters = [
+    { key: 'All', translation: 'projectsFilterAll' },
+    { key: 'Full-Stack', translation: 'projectsFilterFullStack' },
+    { key: 'Frontend', translation: 'projectsFilterFrontend' },
+    { key: 'Backend', translation: 'projectsFilterBackend' }
+  ];
 
   const filteredProjects = activeFilter === 'All'
     ? projectsData
@@ -20,15 +27,15 @@ const Projects = () => {
 
   return (
     <section className={styles.projects}>
-      <h2>Featured Projects</h2>
+      <h2>{t('projectsh2')}</h2>
       <div className={styles.projectFilters}>
         {filters.map((filter) => (
           <button
-            key={filter}
-            className={`${styles.filterBtn} ${filter === activeFilter ? styles.active : ''}`}
-            onClick={() => handleFilterChange(filter)}
+            key={filter.key}
+            className={`${styles.filterBtn} ${filter.key === activeFilter ? styles.active : ''}`}
+            onClick={() => handleFilterChange(filter.key)}
           >
-            {filter}
+            {t(filter.translation)}
           </button>
         ))}
       </div>
