@@ -1,3 +1,4 @@
+import { useEffect, useRef, useState } from 'react';
 import styles from './DesignShowcase.module.css';
 import fika1 from '../assets/images/fika1.jpg';
 import fika2 from '../assets/images/fika2.jpg';
@@ -33,13 +34,48 @@ const designProjects: DesignProject[] = [
 ];
 
 const DesignShowcase = () => {
+  const projectRefs = [useRef<HTMLDivElement>(null), useRef<HTMLDivElement>(null)];
+  const [visible, setVisible] = useState([false, false]);
+
+  useEffect(() => {
+    const observer = new window.IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          projectRefs.forEach((ref, i) => {
+            if (entry.target === ref.current && entry.isIntersecting) {
+              setVisible((prev) => {
+                if (prev[i]) return prev; // already visible
+                const updated = [...prev];
+                updated[i] = true;
+                return updated;
+              });
+            }
+          });
+        });
+      },
+      { threshold: 0.3 }
+    );
+    projectRefs.forEach((ref) => {
+      if (ref.current) observer.observe(ref.current);
+    });
+    return () => {
+      projectRefs.forEach((ref) => {
+        if (ref.current) observer.unobserve(ref.current);
+      });
+    };
+  }, []);
+
   return (
     <section className={styles.designShowcase}>
       <h2>Design Work</h2>
       <p className={styles.subtitle}>Additional UX/UI Design Projects</p>
       <div className={styles.projectsContainer}>
         {designProjects.map((project, index) => (
-          <div key={index} className={styles.designProject}>
+          <div
+            key={index}
+            ref={projectRefs[index]}
+            className={`${styles.designProject} ${styles.fadeInUp} ${visible[index] ? styles.visible : ''}`}
+          >
             <div className={styles.projectInfo}>
               <h3>{project.title}</h3>
               <p>{project.description}</p>
