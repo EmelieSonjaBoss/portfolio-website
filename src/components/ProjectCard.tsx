@@ -20,11 +20,12 @@ const ProjectCard = ({ titleKey, descriptionKey, tech, image, liveLink, githubLi
         <img src={image} alt={t(titleKey)} />
         <div className={styles.projectOverlay}>
           <div className={styles.projectLinks}>
-            {liveLink ? (
+            {liveLink && (
               <a href={liveLink} target="_blank" rel="noopener noreferrer">Live Demo</a>
-            ) : githubLink ? (
+            )}
+            {githubLink && (
               <a href={githubLink} target="_blank" rel="noopener noreferrer">View on GitHub</a>
-            ) : null}
+            )}
           </div>
         </div>
       </div>

@@ -23,6 +23,7 @@ export const projectsData: Project[] = [
     tech: ["React", "TypeScript", "PWA", "Vite", "CSS"],
     image: packingList,
     liveLink: "https://emeliesonjaboss.github.io/packing-list/",
+    githubLink: "https://github.com/EmelieSonjaBoss/packing-list",
     category: "Frontend",
     date: "June 2025"
   },
@@ -32,6 +33,7 @@ export const projectsData: Project[] = [
     tech: ["TypeScript", "Vue", "Node.js", "MongoDB", "Express", "JWT", "Pinia", "CORS", "Axios", "Vite", "Mongoose"],
     image: storyshelf,
     liveLink: "https://storyshelf-client.vercel.app/",
+    githubLink: "https://github.com/EmelieSonjaBoss/storyshelf",
     category: "Full-Stack",
     date: "May 2025"
   },
