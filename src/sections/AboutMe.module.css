@@ -61,6 +61,17 @@
   text-align: left;
 }
 
+.fadeInUp {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 1s cubic-bezier(0.23, 1, 0.32, 1), transform 1s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.fadeInUp.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 /* Responsive design */
 @media (max-width: 768px) {
   .content {
