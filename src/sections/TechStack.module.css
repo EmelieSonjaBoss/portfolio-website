@@ -134,6 +134,7 @@
   font-size: 1rem;
   color: #666;
   transition: all 0.2s ease;
+  text-align: center;
 }
 
 .compactTechItem:hover {
@@ -260,6 +261,7 @@
   .compactTechItem {
     padding: 0.5rem 1rem;
     font-size: 0.9rem;
+    text-align: center;
   }
 
   .skillGroupHeader .icon {
