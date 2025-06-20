@@ -119,3 +119,11 @@
   background: white; /* Added to ensure date is always visible */
   padding: 0.2rem 0.5rem; /* Added some padding around the date */
 } 
+
+/* Add new media query for extra small screens */
+@media (max-width: 400px) {
+  .projectLinks a {
+    padding: 0.8rem 0.7rem;
+    font-size: 0.8rem;
+  }
+}
