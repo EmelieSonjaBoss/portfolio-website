@@ -41,6 +41,10 @@
         }
     },
     "projects": {
+        "zoo": {
+            "title": "Sebbes Zoo - Frontend",
+            "description": "En interaktiv zoo-management-app byggd med React och Tailwind. Hantera djurens hunger, medicin och affektionsnivåer med Context API. Appen har PWA-stöd och offline-funktionalitet."
+        },
         "packingList": {
             "title": "Packlistan - Frontend",
             "description": "En Progressive Web App skapad med React och TypeScript som låter användare skapa och hantera packlistor. Appen använder local storage och har offline-funktionalitet."
@@ -69,16 +73,18 @@
     "techStack": {
         "frontend": [
             "React.js",
+            "Next.js",
             "Vue.js",
             "TypeScript",
             "JavaScript",
             "HTML",
+            "CSS",
             "SASS/SCSS",
+            "Tailwind CSS",
             "Vite",
             "Axios",
             "Integration av REST API:er",
-            "PWA",
-            "Pinia"
+            "PWA"
         ],
         "backend": [
             "Node.js",

@@ -4,6 +4,7 @@ import api from '../assets/images/api.jpg'
 import nemo from '../assets/images/nemo.jpg'
 import munkar from '../assets/images/munkar2.jpg'
 import packingList from '../assets/images/packlistan.jpg'
+import zoo from '../assets/images/zoo.jpg'
 
 export interface Project {
   titleKey: string;
@@ -17,6 +18,16 @@ export interface Project {
 }
 
 export const projectsData: Project[] = [
+  {
+    titleKey: "projects.zoo.title",
+    descriptionKey: "projects.zoo.description",
+    tech: ["React", "Tailwind", "TypeScript", "Vite", "Axios", "PWA"],
+    image: zoo,
+    liveLink: "https://sebbes-zoo.vercel.app/",
+    githubLink: "https://github.com/EmelieSonjaBoss/Sebbes-Zoo",
+    category: "Frontend",
+    date: "August 2025"
+  },
   {
     titleKey: "projects.packingList.title",
     descriptionKey: "projects.packingList.description",
