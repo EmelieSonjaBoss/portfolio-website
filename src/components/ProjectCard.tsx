@@ -8,23 +8,31 @@ interface ProjectCardProps {
   image: string;
   liveLink?: string;
   githubLink?: string;
+  comingSoon?: boolean;
+  containImage?: boolean;
   date: string;
 }
 
-const ProjectCard = ({ titleKey, descriptionKey, tech, image, liveLink, githubLink, date }: ProjectCardProps) => {
+const ProjectCard = ({ titleKey, descriptionKey, tech, image, liveLink, githubLink, comingSoon, containImage, date }: ProjectCardProps) => {
   const { t } = useTranslation();
 
   return (
     <div className={styles.projectCard}>
       <div className={styles.projectImage}>
-        <img src={image} alt={t(titleKey)} />
+        <img src={image} alt={t(titleKey)} className={containImage ? styles.imageContain : ''} />
         <div className={styles.projectOverlay}>
           <div className={styles.projectLinks}>
-            {liveLink && (
-              <a href={liveLink} target="_blank" rel="noopener noreferrer">Live Demo</a>
-            )}
-            {githubLink && (
-              <a href={githubLink} target="_blank" rel="noopener noreferrer">View on GitHub</a>
+            {comingSoon ? (
+              <button className={styles.disabledButton} disabled>View the project</button>
+            ) : (
+              <>
+                {liveLink && (
+                  <a href={liveLink} target="_blank" rel="noopener noreferrer">Live Demo</a>
+                )}
+                {githubLink && (
+                  <a href={githubLink} target="_blank" rel="noopener noreferrer">View on GitHub</a>
+                )}
+              </>
             )}
           </div>
         </div>

@@ -1,7 +1,7 @@
 {
     "heroh2": "Frontend Developer",
     "heroh3": "Crafting digital solutions",
-    "aboutmaintext": "Web developer with a passion for clean and responsive web applications. Currently specializing in Frontend Development at Medieinstitutet, working with React, TypeScript, and modern web technologies.",
+    "aboutmaintext": "Frontend developer with a passion for clean and responsive web applications. A recent graduate in Frontend Development from Medieinstitutet, working with React, TypeScript, and modern web technologies.",
     "abouthighlight1": "A growing interest in full-stack development - combining frontend with backend projects has become a personal favorite",
     "abouthighlight2": "With eight years of experience running my own business in the equine industry, I've built a solid foundation in practical problem-solving and business strategy, skills I now bring into the tech world",
     "abouthighlight3": "Background in photography, bringing a trained eye for visual balance, detail, and user-centered design",
@@ -41,6 +41,14 @@
         }
     },
     "projects": {
+        "posPrototype": {
+            "title": "POS Prototype - Frontend",
+            "description": "A Figma prototype for a Point of Sale system, designed during my internship. Covers the full user flow for a retail POS interface."
+        },
+        "shopRental": {
+            "title": "Rental Microfrontend - Frontend",
+            "description": "A shop management microfrontend for ski rental shops. A staff tool for issuing rental agreements, building equipment packages, looking up bookings, and calculating DIN ski binding values. Designed for touchscreen use at the rental counter."
+        },
         "zoo": {
             "title": "Sebbes Zoo - Frontend",
             "description": "An interactive zoo management app built with React and Tailwind. Manage the animals hunger, medication and affection levels using the Context API. The app features PWA support and offline functionality."
@@ -64,10 +72,6 @@
         "nemo": {
             "title": "Nemo's Ice Cream - Frontend",
             "description": "Nemo's Ice Cream is a ocean-inspired Vue single-page app that showcases artisanal ice cream flavors with smooth animations and responsive navigation. Group project."
-        },
-        "donutShop": {
-            "title": "The Donut shop - Frontend",
-            "description": "One of my first projects - an e-commerce interface with cart functionality and payment integration."
         }
     },
     "techStack": {
@@ -83,8 +87,12 @@
             "Tailwind CSS",
             "Vite",
             "Axios",
-            "Consuming REST APIs",
-            "PWA"
+            "REST API",
+            "PWA",
+            "MUI (Material UI)",
+            "Zustand",
+            "TanStack React Query",
+            "i18next"
         ],
         "backend": [
             "Node.js",
@@ -97,7 +105,8 @@
             "RESTful APIs Development",
             "CORS",
             "API Security",
-            "dotenv"
+            "dotenv",
+            "GraphQL"
         ],
         "design": [
             "UX Research & Analysis",
@@ -116,7 +125,9 @@
             "npm",
             "Docker",
             "ESLint & Prettier",
-            "MongoDB Compass"
+            "MongoDB Compass",
+            "Playwright",
+            "Hygraph (CMS)"
         ],
         "methodologies": [
             "Agile & Scrum",
@@ -124,7 +135,8 @@
             "RESTful Architecture",
             "Database Design",
             "Responsive Design Patterns",
-            "Component-Based Design"
+            "Component-Based Design",
+            "Microfrontend Architecture"
         ]
     }
 }

@@ -1,7 +1,7 @@
 {
     "heroh2": "Frontendutvecklare",
     "heroh3": "Skapar digitala lösningar",
-    "aboutmaintext": "Webbutvecklare med en passion för välstrukturerade och responsiva webbapplikationer. Studerar för närvarande Frontendutveckling på Medieinstitutet med fokus på TypeScript, React och andra moderna teknologier.",
+    "aboutmaintext": "Frontendutvecklare med en passion för välstrukturerade och responsiva webbapplikationer. Har studerat Frontendutveckling på Medieinstitutet med fokus på TypeScript, React och moderna webbteknologier.",
     "abouthighlight1": "Ett växande intresse för fullstackutveckling - att kombinera frontend med backendprojekt har blivit en personlig favorit",
     "abouthighlight2": "Efter åtta år som egen företagare i hästbranschen har jag med mig både skarpa problemlösningsförmågor och affärstänk, styrkor jag nu tar med mig in i techvärlden",
     "abouthighlight3": "Bakgrund inom fotografi, vilket har gett mig ett tränat öga för detaljer och visuell balans",
@@ -41,6 +41,14 @@
         }
     },
     "projects": {
+        "posPrototype": {
+            "title": "POS-prototyp - Frontend",
+            "description": "En Figma-prototyp för ett kassasystem, designad under min praktik. Täcker hela användarflödet för ett kassagränssnitt för butik."
+        },
+        "shopRental": {
+            "title": "Rental Microfrontend - Frontend",
+            "description": "En mikrofrontend för butikshantering på skiduthyrningar. Ett personalsystem för att skapa hyresavtal, sätta ihop utrustningspaket, söka upp bokningar och beräkna DIN-bindningsvärden. Designad för pekskärmsanvändning i butik."
+        },
         "zoo": {
             "title": "Sebbes Zoo - Frontend",
             "description": "En interaktiv zoo-management-app byggd med React och Tailwind. Hantera djurens hunger, medicin och affektionsnivåer med Context API. Appen har PWA-stöd och offline-funktionalitet."
@@ -64,10 +72,6 @@
         "nemo": {
             "title": "Nemo's Ice Cream - Frontend",
             "description": "Nemo's glassbar är en havsinspirerad Vue single-page app som visar upp olika glassmaker med smidiga animationer och responsiv navigation. Grupprojekt där syftet var att implementera en design med pixel-perfect matchning."
-        },
-        "donutShop": {
-            "title": "Gottfrids Munkshop - Frontend",
-            "description": "Ett av mina första projekt - ett e-handelsgränssnitt med kundvagnsfunktionalitet och betalningsintegration."
         }
     },
     "techStack": {
@@ -83,8 +87,12 @@
             "Tailwind CSS",
             "Vite",
             "Axios",
-            "Integration av REST API:er",
-            "PWA"
+            "REST API",
+            "PWA",
+            "MUI (Material UI)",
+            "Zustand",
+            "TanStack React Query",
+            "i18next"
         ],
         "backend": [
             "Node.js",
@@ -97,7 +105,8 @@
             "RESTful API-utveckling",
             "CORS",
             "API-säkerhet",
-            "dotenv"
+            "dotenv",
+            "GraphQL"
         ],
         "design": [
             "UX-forskning & Analys",
@@ -116,7 +125,9 @@
             "npm",
             "Docker",
             "ESLint & Prettier",
-            "MongoDB Compass"
+            "MongoDB Compass",
+            "Playwright",
+            "Hygraph (CMS)"
         ],
         "methodologies": [
             "Agile & Scrum",
@@ -124,7 +135,8 @@
             "RESTful arkitektur",
             "Databasdesign",
             "Responsiva designmönster",
-            "Komponentbaserad design"
+            "Komponentbaserad design",
+            "Mikrofrontend-arkitektur"
         ]
     }
 }

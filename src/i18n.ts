@@ -18,7 +18,7 @@ const getSavedLanguage = () => {
   try {
     const savedLanguage = localStorage.getItem('portfolio-language');
     return savedLanguage && (savedLanguage === 'en' || savedLanguage === 'sv') ? savedLanguage : 'en';
-  } catch (error) {
+  } catch {
     console.warn('Could not access localStorage, using default language');
     return 'en';
   }
@@ -39,7 +39,7 @@ i18n
 i18n.on('languageChanged', (lng) => {
   try {
     localStorage.setItem('portfolio-language', lng);
-  } catch (error) {
+  } catch {
     console.warn('Could not save language preference to localStorage');
   }
 });

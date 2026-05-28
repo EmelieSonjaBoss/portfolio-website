@@ -10,14 +10,17 @@ const AboutMe = () => {
   const [highlightsVisible, setHighlightsVisible] = useState([false, false, false]);
 
   useEffect(() => {
+    const mainTextNode = mainTextRef.current;
+    const highlightNodes = highlightRefs.map((ref) => ref.current);
+
     const observer = new window.IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
-          if (entry.target === mainTextRef.current && entry.isIntersecting) {
+          if (entry.target === mainTextNode && entry.isIntersecting) {
             setMainTextVisible(true);
           }
-          highlightRefs.forEach((ref, idx) => {
-            if (entry.target === ref.current && entry.isIntersecting) {
+          highlightNodes.forEach((node, idx) => {
+            if (entry.target === node && entry.isIntersecting) {
               setHighlightsVisible((prev) => {
                 const updated = [...prev];
                 updated[idx] = true;
@@ -29,16 +32,17 @@ const AboutMe = () => {
       },
       { threshold: 0.3 }
     );
-    if (mainTextRef.current) observer.observe(mainTextRef.current);
-    highlightRefs.forEach((ref) => {
-      if (ref.current) observer.observe(ref.current);
+    if (mainTextNode) observer.observe(mainTextNode);
+    highlightNodes.forEach((node) => {
+      if (node) observer.observe(node);
     });
     return () => {
-      if (mainTextRef.current) observer.unobserve(mainTextRef.current);
-      highlightRefs.forEach((ref) => {
-        if (ref.current) observer.unobserve(ref.current);
+      if (mainTextNode) observer.unobserve(mainTextNode);
+      highlightNodes.forEach((node) => {
+        if (node) observer.unobserve(node);
       });
     };
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
